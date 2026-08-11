@@ -1,3 +1,14 @@
 body {
     background-color: rgb(183, 161, 139);
 }
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header {
+    background-color: rgb(129 109 89);
+    color: rgb(83 66 76);
+}
