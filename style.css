@@ -109,3 +109,237 @@ body {
 .logo:hover {
     background-color: #e9dcce;
 }
+
+/* general page content */
+.page-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 40px;
+    color: #53424c;
+}
+
+/* page introduction */
+.page-introduction {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 70px;
+}
+
+.small-heading {
+    margin-bottom: 10px;
+
+    color: #816d59;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.page-introduction h1 {
+    margin: 0 0 20px;
+
+    color: #53424c;
+
+    font-size: 48px;
+}
+
+.page-introduction p {
+    color: #53424c;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* recipe categories */
+.recipe-category {
+    margin-bottom: 70px;
+}
+
+.recipe-category h2 {
+    margin-bottom: 25px;
+
+    color: #53424c;
+
+    font-size: 30px;
+
+    border-bottom: 2px solid #53424c;
+    padding-bottom: 10px;
+}
+
+/* recipe cards */
+.recipe-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.recipe-card {
+    overflow: hidden;
+
+    background-color: #e9dcce;
+
+    border: 2px solid #53424c;
+    border-radius: 10px;
+
+    color: #53424c;
+    text-decoration: none;
+
+    box-shadow: 0 4px 10px rgba(83, 66, 76, 0.12);
+
+    transition: 0.2s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 18px rgba(83, 66, 76, 0.12);
+}
+
+.recipe-image {
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ba9cad;
+
+    color: #53424c;
+
+    font-size: 14px;
+}
+
+.recipe-card-content {
+    padding: 20px;
+}
+
+.recipe-card-content h3 {
+    margin-top: 0;
+
+    font-size: 21px;
+}
+
+.recipe-card-content p {
+    line-height: 1.5;
+}
+
+/* image gallery */
+.image-gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-placeholder {
+    height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ba9cad;
+
+    border: 2px solid #53424c;
+    border-radius: 10px;
+
+    color: #53424c;
+
+    transition: 0.2s ease;
+}
+
+.gallery-placeholder:hover {
+    transform: scale(1.02);
+}
+
+.gallery-item h3 {
+    color: #53424c;
+
+    font-size: 18px;
+}
+
+/* about page */
+.about-section {
+    max-width: 800px;
+
+    margin: 0 auto 60px;
+    
+    padding: 45px;
+
+    background-color: #e9dcce;
+
+    border: 2px solid #53424c;
+    border-radius: 10px;
+
+    color: #53424c;
+
+    line-height: 1.7;
+}
+
+.about-section h1 {
+    margin-top: 10px;
+
+    font-size: 40px;
+}
+
+.about-values {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.about-values div {
+    padding: 30px;
+
+    background-color: #ba9cad;
+
+    border: 2px solid #53424c;
+    border-radius: 10px;
+
+    color: #53424c;
+}
+
+.about-values h2 {
+    margin-top: 0;
+}
+
+/* questions page */
+.questions-list {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+.question {
+    margin-bottom: 20px;
+
+    padding: 25px 30px;
+
+    background-color: #e9dcce;
+
+    border-left: 5px solid #ba9cad;
+
+    color: #53424c;
+
+    box-shadow: 0 3px 8px rgba(83, 66, 76, 0.1);
+}
+
+.question h2 {
+    margin-top: 0;
+
+    font-size: 21px;
+}
+
+.question p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
