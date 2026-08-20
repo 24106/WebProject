@@ -484,3 +484,334 @@ body {
 .footer-bottom a:hover {
     color: #ba9cad;
 }
+
+/* homepage */
+/* hero section */
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #e9dcce;
+
+    padding: 60px 40px;
+
+    box-sizing: border-box;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-label {
+    margin: 0 0 15px;
+
+    color: #816d59;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin: 0 0 20px;
+
+    color: #53424c;
+
+    font-family: Georgia, serif;
+
+    font-size: 64px;
+
+    line-height: 1.1;
+}
+
+.hero-description {
+    max-width: 550px;
+
+    margin: 0 auto 30px;
+
+    color: #53424c;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+}
+
+/* hero button */
+.hero-button {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background-color: #53424c;
+
+    color: #e9dcce;
+
+    text-decoration: none;
+
+    border: 2px solid #53424c;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #ba9cad;
+
+    border-color: #ba9cad;
+
+    color: #53424c;
+
+    transform: translateY(-2px);
+}
+
+/* divider between header and hero */
+.hero-divider {
+    height: 35px;
+
+    background-color: #b7a18b;
+}
+
+/* featured recipes*/
+.featured-recipes {
+    padding: 90px 40px;
+
+    background-color: #b7a18b;
+}
+
+.section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.section-label {
+    margin: 0 0 10px;
+
+    color: #53424c;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin: 0 0 15px;
+
+    color: #53424c;
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+}
+
+.section-heading > p:last-child {
+    margin: 0;
+
+    color: #53424c;
+
+    line-height: 1.6;
+}
+
+/* recipe grid */
+.recipe-grid {
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+/* recipe card */
+.recipe-card {
+    overflow: hidden;
+
+    background-color: #e9dcce;
+
+    border: 1px solid #816d59;
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px rgba(83, 66, 76, 0.2);
+}
+
+/* recipe image */
+.recipe-image {
+    width: 100%;
+
+    height: 240px;
+
+    overflow: hidden;
+
+    background-color: #ba9cad;
+}
+
+.recipe-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s ease;
+}
+
+.recipe-card:hover .recipe-image img {
+    transform: scale(1.04);
+}
+
+/* recipe information */
+.recipe-info {
+    padding: 25px;
+}
+
+.recipe-category {
+    color: #816d59;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.recipe-info h3 {
+    margin: 10px 0 12px;
+
+    color: #53424c;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+}
+
+.recipe-info p {
+    margin: 0 0 22px;
+
+    color: #53424c;
+
+    line-height: 1.6;
+}
+
+/* recipe button */
+.recipe-button {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    color: #53424c;
+
+    border: 1px solid #53424c;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    transition: 0.2s ease;
+}
+
+.recipe-button:hover {
+    background-color: #53424c;
+
+    color: #e9dcce;
+}
+
+/* categories */
+.categories {
+    padding: 90px 40px;
+
+    background-color: #e9dcce;
+}
+
+.category-grid {
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.category-card {
+    position: relative;
+
+    padding: 35px;
+
+    background-color: #ba9cad;
+
+    color: #53424c;
+
+    text-decoration: none;
+
+    border: 2px solid #53424c;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+.category-card:hover {
+    background-color: #b7a18b;
+
+    transform: translateY(-5px);
+}
+
+.category-card span {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.category-card h3 {
+    margin: 25px 0 10px;
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+}
+
+.category-card p {
+    margin: 0;
+
+    line-height: 1.5;
+}
