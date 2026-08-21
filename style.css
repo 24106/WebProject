@@ -644,7 +644,7 @@ body {
 }
 
 /* recipe card */
-.recipe-card {
+.featured-card {
     overflow: hidden;
 
     background-color: #e9dcce;
@@ -656,14 +656,14 @@ body {
     transition: 0.3s ease;
 }
 
-.recipe-card:hover {
+.featured-card:hover {
     transform: translateY(-6px);
 
     box-shadow: 0 12px 25px rgba(83, 66, 76, 0.2);
 }
 
 /* recipe image */
-.recipe-image {
+.featured-image {
     width: 100%;
 
     height: 240px;
@@ -673,7 +673,7 @@ body {
     background-color: #ba9cad;
 }
 
-.recipe-image img {
+.featured-image img {
     width: 100%;
     height: 100%;
 
@@ -684,7 +684,7 @@ body {
     transition: 0.4s ease;
 }
 
-.recipe-card:hover .recipe-image img {
+.featured-card:hover .featured-image img {
     transform: scale(1.04);
 }
 
@@ -814,4 +814,219 @@ body {
     margin: 0;
 
     line-height: 1.5;
+}
+
+/* smash burger recipe page*/
+/* recipe introduction */
+.recipe-introduction {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 80px 40px;
+
+    display: grid;
+
+    grid-template-columns: 1.1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+/* recipe introduction image */
+.recipe-introduction-image {
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+.recipe-introduction-image img {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* recipe introduction content */
+.recipe-introduction-content {
+    padding: 20px;
+}
+
+.recipe-page-category {
+    margin: 0 0 15px;
+
+    color: #816d59;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+.recipe-introduction-content h1 {
+    margin: 0 0 15px;
+
+    color: #53424c;
+
+    font-family: Georgia, serif;
+
+    font-size: 58px;
+
+    line-height: 1.1;
+}
+
+.recipe-introduction-content h2 {
+    margin: 0 0 25px;
+
+    color: #816d59;
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    font-weight: normal;
+
+    line-height: 1.4;
+}
+
+.recipe-page-description {
+    margin: 0 0 35px;
+
+    color: #53424c;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+/* recipe details */
+.recipe-details {
+    display: flex;
+
+    gap: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #816d59;
+}
+
+.recipe-details div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.recipe-details span {
+    color: #816d59;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.recipe-details strong {
+    color: #53424c;
+
+    font-size: 17px;
+}
+
+/* ingredients section */
+.recipe-ingredients {
+    padding: 80px 40px;
+
+    background-color: #e9dcce;
+}
+
+.recipe-section-heading {
+    max-width: 1100px;
+
+    margin: 0 auto 45px;
+}
+
+.recipe-section-label {
+    margin: 0 0 10px;
+
+    color: #816d59;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+.recipe-section-heading h2 {
+    margin: 0;
+
+    color: #53424c;
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+}
+
+/* ingredient groups */
+.ingredient-groups {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.ingredient-group {
+    padding: 30px;
+
+    background-color: #b7a18b;
+
+    border: 1px solid #816d59;
+
+    border-radius: 12px;
+}
+
+.ingredient-group h3 {
+    margin: 0 0 20px;
+
+    color: #53424c;
+
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+}
+
+.ingredient-group ul {
+    margin: 0;
+
+    padding-left: 20px;
+
+    color: #53424c;
+}
+
+.ingredient-group li {
+    margin-bottom: 12px;
+
+    line-height: 1.5;
+}
+
+.ingredient-group li:last-child {
+    margin-bottom: 0;
 }
