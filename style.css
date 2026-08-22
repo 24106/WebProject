@@ -1030,3 +1030,218 @@ body {
 .ingredient-group li:last-child {
     margin-bottom: 0;
 }
+
+/* method section */
+.recipe-method {
+    padding: 90px 40px;
+
+    background-color: #b7a18b;
+}
+
+.method-heading {
+    max-width: 1100px;
+
+    margin: 0 auto 50px;
+}
+
+.method-heading h2 {
+    margin: 0;
+
+    color: #53424c;
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+}
+
+/* method content */
+.method-content {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+/* method group */
+.method-group {
+    margin-bottom: 50px;
+
+    padding: 35px;
+
+    background-color: #e9dcce;
+
+    border: 1px solid #816d59;
+
+    border-radius: 12px;
+}
+
+.method-group:last-child {
+    margin-bottom: 0;
+}
+
+.method-group h3 {
+    margin: 0 0 25px;
+
+    color: #53424c;
+
+    font-family: Georgia, serif;
+
+    font-size: 26px;
+}
+
+/* method steps */
+.method-step {
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    gap: 20px;
+
+    align-items: start;
+
+    padding: 18px 0;
+
+    border-top: 1px solid #b7a18b;
+}
+
+.method-step:first-of-type {
+    padding-top: 0;
+
+    border-top: none;
+}
+
+.method-step span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    background-color: #ba9cad;
+
+    color: #53424c;
+
+    border: 1px solid #53424c;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.method-step p {
+    margin: 8px 0 0;
+
+    color: #53424c;
+
+    line-height: 1.7;
+}
+
+/* recipe credits */
+.recipe-credits {
+    padding: 70px 40px;
+
+    background-color: #e9dcce;
+
+    border-top: 1px solid #816d59;
+}
+
+.credits-content {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.credits-label {
+    margin: 0 0 10px;
+
+    color: #816d59;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+.credits-content h2 {
+    margin: 0 0 20px;
+
+    color: #53424c;
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+}
+
+.credits-content p:not(.credits-label) {
+    margin: 0 0 12px;
+
+    color: #53424c;
+
+    line-height: 1.6;
+}
+
+.credits-content strong {
+    color: #816d59;
+}
+
+/* original recipe button */
+.source-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 24px;
+
+    background-color: #53424c;
+
+    color: #e9dcce;
+
+    border: 2px solid #53424c;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+.source-button:hover {
+    background-color: #ba9cad;
+
+    border-color: #ba9cad;
+
+    color: #53424c;
+
+    transform: translateY(-2px);
+}
+
+/* credit buttons */
+.credit-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+}
