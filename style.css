@@ -211,6 +211,13 @@ body {
     font-size: 14px;
 }
 
+.recipe-image img {
+    height: 175px;
+    width: 315px;
+
+    border-radius: 10px;
+}
+
 .recipe-card-content {
     padding: 20px;
 }
@@ -232,6 +239,13 @@ body {
     grid-template-columns: repeat(3, 1fr);
 
     gap: 30px;
+}
+
+.image-gallery img {
+    width: 190px;
+    height: 210px;
+
+    border-radius: 10px;
 }
 
 .gallery-item {
