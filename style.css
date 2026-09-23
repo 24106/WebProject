@@ -250,6 +250,10 @@ body {
 
 .gallery-item {
     text-align: center;
+
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .gallery-placeholder {
