@@ -607,7 +607,7 @@ body {
 .featured-recipes {
     padding: 90px 40px;
 
-    background-color: #b7a18b;
+    background-color: #e9dcce;
 }
 
 .section-heading {
@@ -1262,6 +1262,56 @@ body {
     flex-wrap: wrap;
 
     margin-top: 25px;
+}
+
+/* home introduction */
+.home-introduction {
+    padding: 65px 40px;
+
+    background-color: #b7a18b;
+
+    border-top: 1px solid #816d59;
+    border-bottom: 1px solid #816d59;
+}
+
+.home-introduction-content {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.home-introduction .section-label {
+    margin-bottom: 12px;
+}
+
+.home-introduction h2 {
+    margin: 0;
+
+    color: #53424c;
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+}
+
+.home-introduction-content > p {
+    margin: 0;
+
+    color: #53424c;
+
+    font-size: 17px;
+
+    line-height: 1.8;
 }
 
 /* =========================
