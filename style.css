@@ -170,68 +170,99 @@ body {
 
 /* recipe cards */
 .recipe-grid {
+    max-width: 1150px;
+    margin: 0 auto;
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
+    gap: 30px;
 }
 
 .recipe-card {
     overflow: hidden;
-
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: #e9dcce;
-
     border: 2px solid #53424c;
-    border-radius: 10px;
-
+    border-radius: 12px;
     color: #53424c;
     text-decoration: none;
-
-    box-shadow: 0 4px 10px rgba(83, 66, 76, 0.12);
-
-    transition: 0.2s ease;
+    box-shadow: 0 4px 10px rgba(83, 66, 76, 0.10);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .recipe-card:hover {
-    transform: translateY(-5px);
-
-    box-shadow: 0 8px 18px rgba(83, 66, 76, 0.12);
+    transform: translateY(-7px);
+    box-shadow: 0 12px 24px rgba(83, 66, 76, 0.18);
 }
 
 .recipe-image {
-    height: 200px;
-
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: #ba9cad;
-
-    color: #53424c;
-
-    font-size: 14px;
 }
 
 .recipe-image img {
-    height: 175px;
-    width: 315px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
 
-    border-radius: 10px;
+.recipe-card:hover .recipe-image img {
+    transform: scale(1.04);
 }
 
 .recipe-card-content {
-    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.recipe-card-category {
+    margin-bottom: 9px;
+    color: #816d59;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .recipe-card-content h3 {
-    margin-top: 0;
-
-    font-size: 21px;
+    margin-top: 0 0 12px;
+    color: #53424c;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    line-height: 1.2;
 }
 
 .recipe-card-content p {
-    line-height: 1.5;
+    margin: 0;
+    color: #53424c;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.recipe-card-link {
+    align-self: flex-start;
+    margin-top: auto;
+    padding-top: 22px;
+    color: #53424c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+.recipe-card:hover .recipe-card-link {
+    color: #816d59;
 }
 
 /* image gallery */
