@@ -1591,8 +1591,7 @@ body {
 
     .recipe-grid {
         grid-template-columns: 1fr;
-        gap: 25px;
-        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
     }
 
     .featured-image {
@@ -1603,6 +1602,9 @@ body {
         padding: 23px;
     }
 
+    .recipe-card-content {
+        padding: 23px;
+    }
 
     /* =========================
        CATEGORY CARDS
@@ -1628,27 +1630,32 @@ body {
        ========================= */
 
     .page-content {
-        padding: 50px 20px;
+        padding: 55px 20px;
     }
 
     .page-introduction {
-        margin-bottom: 45px;
+        margin-bottom: 55px;
     }
 
     .page-introduction h1 {
-        font-size: 38px;
+        font-size: 40px;
     }
 
     .page-introduction p {
         font-size: 16px;
     }
 
+    .recipe-category {
+        margin-bottom: 60px;
+    }
+
     .recipe-category h2 {
-        font-size: 27px;
+        font-size: 28px;
+        gap: 12px;
     }
 
     .recipe-image {
-        height: 220px;
+        height: 230px;
     }
 
     .recipe-image img {
@@ -1665,12 +1672,11 @@ body {
 
     .image-gallery {
         grid-template-columns: 1fr;
-
-        gap: 25px;
+        gap: 22px;
     }
 
     .gallery-placeholder {
-        height: 280px;
+        height: 270px;
     }
 
     .image-gallery img {
