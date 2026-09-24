@@ -350,30 +350,30 @@
             <a href="index.html">Back to Home</a>
         </div>
     </footer>
+
     <script>
     /* recipe carousel */
     document.querySelectorAll(".recipe-carousel").forEach(function(carousel) {
     
-    /* recipe area inside the carousel */
     const recipeGrid = carousel.querySelector(".recipe-grid");
-    
-    /* left arrow */
     const previousButton = carousel.querySelector(".carousel-prev");
-    /* right arrow */
     const nextButton = carousel.querySelector(".carousel-next");
-    
-    /* find all of the recipe cards */
     const recipeCards = carousel.querySelectorAll(".recipe-card");
     
-    /* how far moved when an arrow clicked */
     function getScrollAmount() {
-        const cardWidth = recipeCards[0].getBoundingClientRect().width;
+        /* phones, move one card */
         if (window.innerWidth <= 700) {
-            return cardWidth;
-        } else {
-            const gap = 30; 
-            return (cardWidth + gap) * 3;
+            return recipeGrid.clientWidth;
         }
+
+        /* desktop, move three cards */
+        const firstCard = recipeCards[0];
+        const secondCard = recipeCards[1]
+
+        const cardWidth = firstCard.getBoundingClientRect().width;
+        const gap = secondCard.offsetLeft - firstCard.offsetLeft - cardWidth;
+
+        return (cardWidth + gap) * 3;
     }
     
     /* RIGHT ARROW */
@@ -393,5 +393,6 @@
     });
 });
 </script>
+
 </body>
 </html>

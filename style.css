@@ -273,7 +273,8 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
+    box-sizing: border-box;
     background-color: #e9dcce;
     border: 2px solid #53424c;
     border-radius: 12px;
@@ -800,7 +801,7 @@ body {
 .recipe-carousel {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 15px;
 }
 
@@ -811,11 +812,13 @@ body {
     gap: 30px;
     overflow: hidden;
     scroll-behavior: smooth;
+    align-items: stretch;
 }
 
 .recipe-carousel .recipe-card {
     flex: 0 0 calc((100% - 60px) / 3);
     min-width: 0;
+    box-sizing: border-box;
 }
 
 .carousel-arrow {
