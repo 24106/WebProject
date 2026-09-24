@@ -114,58 +114,68 @@ body {
 
 /* general page content */
 .page-content {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: 0 auto;
-    padding: 70px 40px;
+    padding: 80px 40px;
     color: #53424c;
+    box-sizing: border-box;
 }
 
 /* page introduction */
 .page-introduction {
+    max-width: 720px;
+    margin: 0 auto 75px;
     text-align: center;
-    max-width: 700px;
-    margin: 0 auto 70px;
 }
 
 .small-heading {
-    margin-bottom: 10px;
-
+    margin: 0 0 12px;
     color: #816d59;
-
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .page-introduction h1 {
-    margin: 0 0 20px;
-
+    margin: 0 0 18px;
     color: #53424c;
-
-    font-size: 48px;
+    font-family: Georgia, serif;
+    font-size: 52px;
+    line-height: 1.1;
 }
 
-.page-introduction p {
+.page-introduction > p:last-child {
+    max-width: 600px;
+    margin: 0 auto;
     color: #53424c;
-
     font-size: 17px;
     line-height: 1.7;
 }
 
 /* recipe categories */
 .recipe-category {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
+}
+
+.recipe-category:last-child {
+    margin-bottom: 0;
 }
 
 .recipe-category h2 {
-    margin-bottom: 25px;
-
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px;
     color: #53424c;
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
 
-    font-size: 30px;
-
-    border-bottom: 2px solid #53424c;
-    padding-bottom: 10px;
+.recipe-category h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #816d59;
 }
 
 /* recipe cards */
@@ -283,7 +293,6 @@ body {
 
 .gallery-item {
     text-align: center;
-
     text-decoration: none;
     color: inherit;
     display: block;
@@ -291,18 +300,13 @@ body {
 
 .gallery-placeholder {
     height: 230px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: #ba9cad;
-
     border: 2px solid #53424c;
     border-radius: 10px;
-
     color: #53424c;
-
     transition: 0.2s ease;
 }
 
@@ -312,50 +316,37 @@ body {
 
 .gallery-item h3 {
     color: #53424c;
-
     font-size: 18px;
 }
 
 /* about page */
 .about-section {
     max-width: 800px;
-
     margin: 0 auto 60px;
-    
     padding: 45px;
-
     background-color: #e9dcce;
-
     border: 2px solid #53424c;
     border-radius: 10px;
-
     color: #53424c;
-
     line-height: 1.7;
 }
 
 .about-section h1 {
     margin-top: 10px;
-
     font-size: 40px;
 }
 
 .about-values {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
 }
 
 .about-values div {
     padding: 30px;
-
     background-color: #ba9cad;
-
     border: 2px solid #53424c;
     border-radius: 10px;
-
     color: #53424c;
 }
 
@@ -366,27 +357,20 @@ body {
 /* questions page */
 .questions-list {
     max-width: 800px;
-
     margin: 0 auto;
 }
 
 .question {
     margin-bottom: 20px;
-
     padding: 25px 30px;
-
     background-color: #e9dcce;
-
     border-left: 5px solid #ba9cad;
-
     color: #53424c;
-
     box-shadow: 0 3px 8px rgba(83, 66, 76, 0.1);
 }
 
 .question h2 {
     margin-top: 0;
-
     font-size: 21px;
 }
 
@@ -398,24 +382,17 @@ body {
 /* footer */
 .site-footer {
     margin-top: 80px;
-
     background-color: #53424c;
-
     color: #e9dcce;
 }
 
 /* footer content */
 .footer-content {
     max-width: 1100px;
-
     margin: 0 auto;
-
     padding: 60px 40px;
-
     display: grid;
-
     grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
-
     gap: 50px;
 }
 
@@ -427,31 +404,22 @@ body {
 .footer-brand img {
     width: 90px;
     height: auto;
-
     display: block;
-
     margin-bottom: 15px;
-
     padding: 10px;
-
     background-color: #ba9cad;
-
     border-radius: 20px;
 }
 
 .footer-brand h2 {
     margin: 0 0 12px;
-
     color: #e9dcce;
-
     font-size: 25px;
 }
 
 .footer-brand p {
     margin: 0;
-
     color: #e9dcce;
-
     line-height: 1.6;
 }
 
