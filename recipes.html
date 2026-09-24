@@ -35,8 +35,18 @@
             <p>Explore easy meals, delicious snacks, and sweet treats, all in one place.</p>
         </section>
 
+        <!-- Recipe category navigation -->
+        <nav class="category-navigation" id="category-navigation" aria-label="Recipe categories">
+            <p>Browse By Category</p>
+            <div class="category-navigation-links">
+                <a href="#main-meals">Main Meals</a>
+                <a href="#snacks">Snacks</a>
+                <a href="#sweet-treats">Sweet Treats</a>
+            </div>
+        </nav>
+
         <!---Main meals-->
-        <section class="recipe-category">
+        <section class="recipe-category" id="main-meals">
             <h2>Main Meals</h2>
             <div class="recipe-grid">
                 <!---Recipe card 1-->
@@ -81,10 +91,13 @@
                     </div>
                 </a>
             </div>
+            <a href="#category-navigation" class="category-back">
+                Back to Categories ↑
+            </a>
         </section>
 
         <!---Snacks-->
-        <section class="recipe-category">
+        <section class="recipe-category" id="snacks">
             <h2>Snacks</h2>
             <div class="recipe-grid">
                 <!---Recipe card 1-->
@@ -129,10 +142,13 @@
                     </div>
                 </a>
             </div>
+            <a href="#category-navigation" class="category-back">
+                Back to Categories ↑
+            </a>
         </section>
 
         <!---Sweet treats-->
-        <section class="recipe-category">
+        <section class="recipe-category" id="sweet-treats">
             <h2>Sweet Treats</h2>
             <div class="recipe-grid">
                 <!---Recipe card 1-->
@@ -177,6 +193,9 @@
                     </div>
                 </a>
             </div>
+            <a href="#category-navigation" class="category-back">
+                Back to Categories ↑
+            </a>
         </section>
     </main>
 
