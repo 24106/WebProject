@@ -1095,17 +1095,17 @@ body {
    Recipe credits
    --------------------------------------------------------- */
 .recipe-credits {
-    padding: 70px 40px;
+    padding: 85px 40px;
     background-color: #e9dcce;
     border-top: 1px solid #816d59;
 }
 
 .credits-content {
-    max-width: 750px;
+    max-width: 950px;
     margin: 0 auto;
-    text-align: center;
 }
 
+/* credits heading */
 .credits-label {
     margin: 0 0 10px;
     color: #816d59;
@@ -1116,37 +1116,92 @@ body {
 }
 
 .credits-content h2 {
-    margin: 0 0 20px;
+    margin: 0 0 40px;
     color: #53424c;
     font-family: Georgia, serif;
-    font-size: 38px;
+    font-size: 42px;
+    line-height: 1.2;
 }
 
-.credits-content p:not(.credits-label) {
+/* credit cards */
+.credit-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.credit-card {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 20px;
+    padding: 30px;
+    background-color: #b7a18b;
+    border: 1px solid #816d59;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.credit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(83, 66, 76, 0.14);
+}
+
+/* credit number */
+.credit-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ba9cad;
+    color: #53424c;
+    border: 1px solid #53424c;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* credit information */
+.credit-type {
+    margin: 0 0 7px;
+    color: #816d59;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.credit-card h3 {
     margin: 0 0 12px;
     color: #53424c;
+    font-family: Georgia, serif;
+    font-size: 24px;
+}
+
+.credit-card p:not(.credit-type) {
+    margin: 0;
+    color: #53424c;
+    font-size: 15px;
     line-height: 1.6;
 }
 
-.credits-content strong {
-    color: #816d59;
-}
-
-/* original recipe button */
+/* source buttons */
 .source-button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
+    margin-top: 22px;
+    padding: 10px 18px;
     background-color: #53424c;
     color: #e9dcce;
     border: 2px solid #53424c;
     border-radius: 25px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
-    transition: 0.3s ease;
+    transition: 0.25s ease;
 }
 
 .source-button:hover {
@@ -1156,13 +1211,16 @@ body {
     transform: translateY(-2px);
 }
 
-/* credit buttons */
-.credit-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 25px;
+/* credits note */
+.credits-note {
+    max-width: 700px;
+    margin: 35px auto 0;
+    padding-top: 25px;
+    border-top: 1px solid #b7a18b;
+    color: #816d59;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
 }
 
 /* =========================================================
@@ -1742,11 +1800,46 @@ body {
        Recipe credits
        ----------------------------------------------------- */
     .recipe-credits {
-        padding: 50px 20px;
+        padding: 60px 20px;
     }
 
     .credits-content h2 {
         font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .credit-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .credit-card {
+        grid-template-columns: 45px 1fr;
+        gap: 15px;
+        padding: 25px 20px;
+    }
+
+    .credit-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 11px;
+    }
+
+    .credit-card h3 {
+        font-size: 21px;
+    }
+
+    .credit-card p:not(.credit-type) {
+        font-size: 14px;
+    }
+
+    .source-button {
+        padding: 9px 15px;
+    }
+
+    .credits-note {
+        font-size: 12px;
+        margin-top: 25px;
     }
 
     /* -----------------------------------------------------
