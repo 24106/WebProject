@@ -1944,41 +1944,97 @@ html {
     }
 
     /* -----------------------------------------------------
-       Questions page
-       ----------------------------------------------------- */
+    Questions page
+    ----------------------------------------------------- */
     .questions-list {
         width: 100%;
     }
 
+    .question {
+        margin-bottom: 15px;
+    }
+
     .question summary {
-        padding: 20px;
-        padding-right: 50px;
-        font-size: 19px;
+        padding: 18px 50px 18px 16px;
+        font-size: 18px;
+        line-height: 1.4;
     }
 
     .question summary::after {
-        right: 20px;
-        font-size: 23px;
+        right: 16px;
+        font-size: 22px;
     }
 
     .question-answer {
-        padding: 20px;
+        padding: 20px 16px 25px;
+        overflow: hidden;
     }
 
     .question-answer h3 {
-        font-size: 20px;
+        font-size: 19px;
+        line-height: 1.35;
         margin-top: 22px;
     }
 
     .question-answer p {
         font-size: 15px;
+        line-height: 1.65;
         margin-bottom: 18px;
     }
 
+    /* make question images responsive */
     .question-answer img {
-        height: 200px;
-        margin: 15px 0 25px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 15px auto 25px;
     }
+
+    /* large screenshots */
+    .question-answer img[src="images/all-recipes-page-photo.png"],
+    .question-answer img[src="images/ingredients.png"],
+    .question-answer img[src="images/recipe-page.png"],
+    .question-answer img[src="images/recipe-credits.png"] {
+        width: 100%;
+        height: auto;
+    }
+
+    /* smaller screenshots */
+    .question-answer img[src="images/all-recipes-photo.png"],
+    .question-answer img[src="images/view-recipe-button.png"],
+    .question-answer img[src="images/method-section.png"] {
+        width: 40%;
+        height: auto;
+    }
+
+    /* medium screenshots */
+    .question-answer img[src="images/image-credits.png"],
+    .question-answer img[src="images/footer-credits.png"] {
+        width: 85%;
+        height: auto;
+    }
+
+    /* long screenshot */
+    .question-answer img[src="images/ingredient-quantities.png"] {
+        width: 60%;
+        height: auto;
+    }
+
+    /* extremely long screenshot */
+    .question-answer img[src="images/cooking-numbers.png"] {
+        width: 20%;
+        height: auto;
+    }
+
+    /* food photos */
+    .question-answer img[src="images/nachos.webp"],
+    .question-answer img[src="images/sausage-rolls.jpg"],
+    .question-answer img[src="images/lolly-cake.jpg"] {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
 
     /* -----------------------------------------------------
        Recipe pages
