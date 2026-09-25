@@ -1338,6 +1338,32 @@ html {
 }
 
 /* =========================================================
+   BACK TO TOP BUTTON
+   ========================================================= */
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 35px;
+    padding: 11px 22px;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    border: 1px solid var(--color-dark);
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.back-to-top:hover {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+    transform: translateY(-2px);
+}
+
+/* =========================================================
    13. FOOTER
    ========================================================= */
 /* footer */
