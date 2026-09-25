@@ -1596,6 +1596,18 @@ html {
 }
 
 /* =========================================================
+KEYBOARD FOCUS STATES
+========================================================= */
+/* Visible focus for links and buttons when using the keyboard */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* =========================================================
    14. RESPONSIVE DESIGN
    ========================================================= */
 
