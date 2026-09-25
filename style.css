@@ -1467,7 +1467,7 @@ html {
 .back-to-top {
     display: block;
     width: fit-content;
-    margin: 0 auto 35px;
+    margin: 40px auto 0;
     padding: 11px 22px;
     background-color: var(--color-light);
     color: var(--color-dark);
