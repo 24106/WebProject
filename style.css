@@ -212,6 +212,7 @@ html {
 /* recipe category */
 .recipe-category {
     margin-bottom: 80px;
+    scroll-margin-top: 40px;
 }
 
 .recipe-category h2 {
