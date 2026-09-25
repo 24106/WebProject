@@ -505,23 +505,39 @@ html {
    Hero section
    --------------------------------------------------------- */
 .hero {
+    position: relative;
     min-height: 540px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #e9dcce;
+    /* hero background image */
+    background-image: url(images/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 60px 40px;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(45, 34, 38, 0.48);
+    z-index: 1;
 }
 
 .hero-content {
+    position: relative;
+    z-index: 2;
     max-width: 750px;
+    padding: 35px 45px;
 }
 
 .hero-label {
     margin: 0 0 18px;
-    color: #816d59;
+    color: #e9dcce;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 4px;
@@ -530,33 +546,36 @@ html {
 
 .hero h1 {
     margin: 0 0 20px;
-    color: #53424c;
+    color: #ffffff;
     font-family: Georgia, serif;
     font-size: 68px;
     line-height: 1.05;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
 }
 
 .hero-description {
     max-width: 560px;
     margin: 0 auto 35px;
-    color: #53424c;
+    color: #f5eee8;
     font-size: 19px;
     line-height: 1.7;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 /* hero button */
 .hero-button {
     display: inline-block;
     padding: 14px 30px;
-    background-color: #53424c;
-    color: #e9dcce;
+    background-color: #e9dcce;
+    color: #53424c;
     text-decoration: none;
-    border: 2px solid #53424c;
+    border: 2px solid #e9dcce;
     border-radius: 30px;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
     transition: 0.3s ease;
 }
 
@@ -565,6 +584,7 @@ html {
     border-color: #ba9cad;
     color: #53424c;
     transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
 }
 
 /* hero divider */
@@ -1546,8 +1566,12 @@ html {
 
     .hero {
         min-height: 430px;
+        padding: 45px 20px;
+        background-position: center;
+    }
 
-        padding: 50px 20px;
+    .hero-content {
+        padding: 25px 15px;
     }
 
     .hero h1 {
