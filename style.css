@@ -953,29 +953,43 @@ html {
    Recipe details
    --------------------------------------------------------- */
 .recipe-details {
-    display: flex;
-    gap: 35px;
-    padding-top: 25px;
-    border-top: 1px solid #816d59;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 30px;
 }
 
-.recipe-details div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.recipe-detail-card {
+    padding: 18px 15px;
+    background-color: #f5eee8;
+    border: 1px solid #816d59;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 3px 8px rgba(83, 66, 76, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-detail-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(83, 66, 76, 0.13);
 }
 
 .recipe-details span {
+    display: block;
+    margin-bottom: 7px;
     color: #816d59;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.recipe-details strong {
+.recipe-detail-card strong {
+    display: block;
     color: #53424c;
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* ---------------------------------------------------------
@@ -1762,8 +1776,12 @@ html {
 
     /* recipe details */
     .recipe-details {
-        flex-direction: column;
-        gap: 15px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .recipe-detail-card {
+        padding: 15px;
     }
 
 
