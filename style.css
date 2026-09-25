@@ -911,6 +911,30 @@ html {
     transform: scale(1.05);
 }
 
+/* carousel counter */
+.carousel-counter {
+    flex-shrink: 0;
+    min-width: 42px;
+    text-align: center;
+    color: var(--color-dark);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* unavailable carousel arrow */
+.carousel-arrow:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    background-color: var(--color-light);
+    transform: none;
+}
+
+.carousel-arrow:disabled:hover {
+    background-color: var(--color-light);
+    transform: none;
+}
+
 /* =========================================================
    12. RECIPE PAGES
    ========================================================= */

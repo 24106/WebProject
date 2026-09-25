@@ -124,6 +124,9 @@
                         </div>
                     </a>
                 </div>
+
+                <div class="carousel-counter" aria-live="polite">1/5</div>
+
                 <button class="carousel-arrow carousel-next" type="button" aria-label="Next recipe">
                     →
                 </button>
@@ -212,6 +215,9 @@
                         </div>
                     </a>
                 </div>
+
+                <div class="carousel-counter" aria-live="polite">1/5</div>
+
                 <button class="carousel-arrow carousel-next" type="button" aria-label="Next recipe">
                     →
                 </button>
@@ -299,6 +305,9 @@
                         </div>
                     </a>
                 </div>
+
+                <div class="carousel-counter" aria-live="polite">1/5</div>
+
                 <button class="carousel-arrow carousel-next" type="button" aria-label="Next recipe">
                     →
                 </button>
@@ -359,6 +368,7 @@
     const previousButton = carousel.querySelector(".carousel-prev");
     const nextButton = carousel.querySelector(".carousel-next");
     const recipeCards = carousel.querySelectorAll(".recipe-card");
+    const counter = carousel.querySelector(".carousel-counter")
     
     function getScrollAmount() {
         /* phones, move one card */
@@ -375,7 +385,30 @@
 
         return (cardWidth + gap) * 3;
     }
-    
+
+    function updateCarousel() {
+        const maxScroll = recipeGrid.scrollWidth - recipeGrid.clientWidth;
+
+        previousButton.disabled = recipeGrid.scrollLeft <= 1;
+        nextButton.disabled = recipeGrid.scrollLeft >= maxScroll - 1;
+
+        if (window.innerWidth <= 700) {
+            const currentCard = Math.round(
+                recipeGrid.scrollLeft / recipeGrid.clientWidth
+            ) + 1;
+
+            counter.textContent = currentCard + "/" + recipeCards.length;
+        } else {
+            const currentPage = Math.round(
+                recipeGrid.scrollLeft / getScrollAmount()
+            ) + 1;
+            const totalPages = Math.ceil(
+                recipeCards.length / 3
+            );
+            counter.textContent = currentPage + "/" + totalPages;
+        }
+    }
+
     /* RIGHT ARROW */
     nextButton.addEventListener("click", function() {
         recipeGrid.scrollBy({
@@ -391,6 +424,15 @@
             behavior: "smooth"
         });
     });
+
+    recipeGrid.addEventListener("scroll", function() {
+        updateCarousel();
+    });
+
+    window.addEventListener("resize", function() {
+        updateCarousel();
+    });
+    updateCarousel();
 });
 </script>
 
