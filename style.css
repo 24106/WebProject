@@ -533,21 +533,129 @@ html {
 
 .question {
     margin-bottom: 20px;
-    padding: 25px 30px;
     background-color: var(--color-light);
     border-left: 5px solid var(--color-accent);
     color: var(--color-dark);
     box-shadow: 0 3px 8px var(--color-shadow);
+    overflow: hidden;
 }
 
-.question h2 {
-    margin-top: 0;
+/* expandable question */
+.question summary {
+    padding: 25px 30px;
     font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 60px;
 }
 
-.question p {
-    margin-bottom: 0;
-    line-height: 1.6;
+/* hide the default arrow */
+.question summary::-webkit-details-marker {
+    display: none;
+}
+
+/* plus symbol */
+.question summary::after {
+    content: "+";
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-secondary);
+    font-size: 26px;
+    font-weight: normal;
+    transition: transform 0.2s ease;
+}
+
+/* change plus to minus when open */
+.question[open] summary::after {
+    content: "−";
+}
+
+/* question hover */
+.question summary:hover {
+    background-color: var(--color-accent);
+}
+
+/* question answer */
+.question-answer {
+    padding: 25px 30px 35px;
+    border-top: 1px solid var(--color-background);
+}
+
+/* answer headings */
+.question-answer h3 {
+    margin: 25px 0 10px;
+    color: var(--color-dark);
+    font-family: Georgia, serif;
+    font-size: 22px;
+}
+
+.question-answer h3:first-child {
+    margin-top: 0;
+}
+
+/* answer paragraphs */
+.question-answer p {
+    margin: 0 0 20px;
+    color: var(--color-dark);
+    line-height: 1.7;
+}
+
+/* question images */
+.question-answer img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto 30px;
+    border: 2px solid var(--color-dark);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--color-shadow);
+    box-sizing: border-box;
+}
+
+/* large screenshots */
+.question-answer img[src="images/all-recipes-page-photo.png"],
+.question-answer img[src="images/ingredients.png"],
+.question-answer img[src="images/recipe-page.png"],
+.question-answer img[src="images/recipe-credits.png"] {
+    width: 85%;
+}
+
+/* smaller screenshots */
+.question-answer img[src="images/all-recipes-photo.png"],
+.question-answer img[src="images/view-recipe-button.png"],
+.question-answer img[src="images/method-section.png"] {
+    width: 20%;
+}
+
+/* medium screenshots */
+.question-answer img[src="images/image-credits.png"],
+.question-answer img[src="images/footer-credits.png"] {
+    width: 45%;
+}
+
+/* long screenshot */
+.question-answer img[src="images/ingredient-quantities.png"] {
+    width: 30%;
+    height: 50%;
+}
+
+/* extremely long screenshot */
+.question-answer img[src="images/cooking-numbers.png"] {
+    height: 250px;
+}
+
+/* food photos */
+.question-answer img[src="images/nachos.webp"],
+.question-answer img[src="images/sausage-rolls.jpg"],
+.question-answer img[src="images/lolly-cake.jpg"] {
+    height: 250px;
+    width: 90%;
+    object-fit: cover;
 }
 
 /* =========================================================
@@ -1842,17 +1950,34 @@ html {
         width: 100%;
     }
 
-    .question {
+    .question summary {
         padding: 20px;
-        box-sizing: border-box;
-    }
-
-    .question h2 {
+        padding-right: 50px;
         font-size: 19px;
     }
 
-    .question p {
+    .question summary::after {
+        right: 20px;
+        font-size: 23px;
+    }
+
+    .question-answer {
+        padding: 20px;
+    }
+
+    .question-answer h3 {
+        font-size: 20px;
+        margin-top: 22px;
+    }
+
+    .question-answer p {
         font-size: 15px;
+        margin-bottom: 18px;
+    }
+
+    .question-answer img {
+        height: 200px;
+        margin: 15px 0 25px;
     }
 
     /* -----------------------------------------------------
